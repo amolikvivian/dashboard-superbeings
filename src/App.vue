@@ -37,6 +37,11 @@ export default {
       if (to.name == "HR" && this.$store.state.userType != "HR") {
         this.$router.push({ path: "/manager/home" });
       }
+      if (to.name == "Login" && this.$store.state.userType == "Manager")
+        this.$router.push({ path: "/manager/home" });
+
+      if (to.name == "Login" && this.$store.state.userType == "HR")
+        this.$router.push({ path: "/hr/home" });
     },
   },
   methods: {
