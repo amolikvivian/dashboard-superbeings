@@ -256,6 +256,9 @@ export default {
   color: rgb(17, 17, 17);
   border-radius: 3px;
 }
+.login-illustration {
+  width: 10rem;
+}
 
 .login-btn-container {
   border-radius: 3px;
