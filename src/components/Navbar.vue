@@ -114,12 +114,12 @@ export default {
   methods: {
     handleNavClick(route) {
       if (this.$store.state.userType != "HR" && route.name === "HR")
-        this.toast("Looks like you need to an HR to access this page!");
+        this.toast("Looks like you need to be an HR to access this page!");
       else if (
         this.$store.state.userType != "Manager" &&
         route.name === "Manager"
       )
-        this.toast("Looks like you need to a Manager to access this page!");
+        this.toast("Looks like you need to be a Manager to access this page!");
       else this.$router.push({ path: route.path });
     },
     toggleOpen() {
